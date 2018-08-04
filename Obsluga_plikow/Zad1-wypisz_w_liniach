@@ -1,0 +1,15 @@
+import sys
+
+file = sys.argv[1]
+
+try:
+    with open(file, encoding='UTF-8') as f:
+        i = 1
+        for line in f:
+            print(i, ": ", line, end="", sep="")
+            i += 1
+except FileNotFoundError:
+    print("Nie znaleziono takiego pliku")
+
+#wywołanie w terminalu
+# >>C:\Users\kurs\workspace\projects\bootcamp\Obsluga_plikow> python nazwa pliku nazwa argumentu -> python Zad1-mypisz_w_liniach logs.txt

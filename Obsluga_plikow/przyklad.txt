@@ -1,0 +1,4 @@
+Przykładowy tekst
+pierwsza linia
+druga linia
+zażółć gęślą jaźń
